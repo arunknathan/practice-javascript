@@ -7,7 +7,7 @@ window.onload = function () {
         genus: 'Homo',
         species: 'Sapien',
         walk: function () {
-            console.log(this.id + ' is walking like a Human')
+            console.log(this.id + ', a ' + this.genus + ' ' + this.species + ', is walking like a Human')
         }
     }
 
@@ -16,7 +16,7 @@ window.onload = function () {
     var Person = Object.create(Human)
     Person.id = 'Arun';
     Person.walk = function () {
-        console.log(this.id + ' is walking like a Person')
+        console.log(this.id + ', a ' + this.genus + ' ' + this.species + ', is walking like a Person')
     }
 
     Person.walk()
